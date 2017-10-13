@@ -17,9 +17,11 @@
 		6A23B0311F90B03100FA259C /* BaseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A23B0301F90B03100FA259C /* BaseEntity.swift */; };
 		6A23B0331F90B04200FA259C /* LayoutConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A23B0321F90B04200FA259C /* LayoutConst.swift */; };
 		6A23B0351F90B05000FA259C /* BaseGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A23B0341F90B04F00FA259C /* BaseGameScene.swift */; };
+		969C151687AD91E65181D1E1 /* Pods_HappyRun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBCA8D2AC640A7FC492D4DC4 /* Pods_HappyRun.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2911F98EE6DDE14D8E29CF6F /* Pods-HappyRun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyRun.release.xcconfig"; path = "Pods/Target Support Files/Pods-HappyRun/Pods-HappyRun.release.xcconfig"; sourceTree = "<group>"; };
 		6A23B0051F90AB7400FA259C /* HappyRun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyRun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A23B0081F90AB7400FA259C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A23B0101F90AB7400FA259C /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +34,8 @@
 		6A23B0301F90B03100FA259C /* BaseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEntity.swift; sourceTree = "<group>"; };
 		6A23B0321F90B04200FA259C /* LayoutConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConst.swift; sourceTree = "<group>"; };
 		6A23B0341F90B04F00FA259C /* BaseGameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseGameScene.swift; sourceTree = "<group>"; };
+		BBCA8D2AC640A7FC492D4DC4 /* Pods_HappyRun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HappyRun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E395B8C830DFD0110DB45420 /* Pods-HappyRun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyRun.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HappyRun/Pods-HappyRun.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				969C151687AD91E65181D1E1 /* Pods_HappyRun.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +55,8 @@
 			children = (
 				6A23B0071F90AB7400FA259C /* HappyRun */,
 				6A23B0061F90AB7400FA259C /* Products */,
+				EDDF670C6056A719BDA12DC8 /* Pods */,
+				C887E78224945FC130250FED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,6 +166,23 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		C887E78224945FC130250FED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBCA8D2AC640A7FC492D4DC4 /* Pods_HappyRun.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDDF670C6056A719BDA12DC8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E395B8C830DFD0110DB45420 /* Pods-HappyRun.debug.xcconfig */,
+				2911F98EE6DDE14D8E29CF6F /* Pods-HappyRun.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,9 +190,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A23B01D1F90AB7400FA259C /* Build configuration list for PBXNativeTarget "HappyRun" */;
 			buildPhases = (
+				F3B6F2522EFBE2F0B367B812 /* [CP] Check Pods Manifest.lock */,
 				6A23B0011F90AB7400FA259C /* Sources */,
 				6A23B0021F90AB7400FA259C /* Frameworks */,
 				6A23B0031F90AB7400FA259C /* Resources */,
+				851C714EC5E64B812C1ED0EC /* [CP] Embed Pods Frameworks */,
+				D49E40CA5648F3C12C4BA53C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -224,6 +251,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		851C714EC5E64B812C1ED0EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HappyRun/Pods-HappyRun-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SpriteUtils/SpriteUtils.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SpriteUtils.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HappyRun/Pods-HappyRun-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D49E40CA5648F3C12C4BA53C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HappyRun/Pods-HappyRun-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3B6F2522EFBE2F0B367B812 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HappyRun-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6A23B0011F90AB7400FA259C /* Sources */ = {
@@ -364,6 +445,7 @@
 		};
 		6A23B01E1F90AB7400FA259C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E395B8C830DFD0110DB45420 /* Pods-HappyRun.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -380,6 +462,7 @@
 		};
 		6A23B01F1F90AB7400FA259C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2911F98EE6DDE14D8E29CF6F /* Pods-HappyRun.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

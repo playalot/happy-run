@@ -1,0 +1,12 @@
+PODS:
+  - SpriteUtils (1.0.0)
+
+DEPENDENCIES:
+  - SpriteUtils
+
+SPEC CHECKSUMS:
+  SpriteUtils: 72c5913d58c486553a519f1c660b41aa2d04125f
+
+PODFILE CHECKSUM: b6a0ecfd5c495e0cc6a0b1a25c3a26d7ceb7907e
+
+COCOAPODS: 1.3.1
