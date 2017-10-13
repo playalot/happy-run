@@ -13,12 +13,12 @@ import GameplayKit
 
 enum PlayerAnimationState: String {
     case idle = "Idle"
-    case walk = "Walk"
+    case run = "Run"
     case hit = "Hit"
     case dead = "Dead"
     case attacking = "Attacking"
     
-    static let allStates: [PlayerAnimationState] = [.idle, .walk, .hit, .dead, .attacking]
+    static let allStates: [PlayerAnimationState] = [.idle, .run, .hit, .dead, .attacking]
 }
 
 struct PlayerAnimation {

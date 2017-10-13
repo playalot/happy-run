@@ -20,15 +20,17 @@ class PlayerEntity: BaseEntity {
     private(set) var spriteComponent: SpriteCompoment!
     private(set) var animationComponent: PlayerAnimationComponent!
     
+    // 376 × 520
+
     init(playerType: PlayerType) {
         self.playerType = playerType
         super.init()
         let textureAtlas = SKTextureAtlas(named: playerType.rawValue)
-        let defaultTexture = textureAtlas.textureNamed("Walk__01.png")
-        let textureSize = CGSize(width: 524, height: 565)
+        let defaultTexture = textureAtlas.textureNamed("Idle__000.png")
+        let textureSize = CGSize(width: 376, height: 520)
         let animations = PlayerAnimationComponent.loadAnimation(textureAtlas: textureAtlas,
                                                           states: [PlayerAnimationState.dead : false,
-                                                                   PlayerAnimationState.walk : true,
+                                                                   PlayerAnimationState.run : true,
                                                                    PlayerAnimationState.hit  : false])
         
         spriteComponent = SpriteCompoment(entity: self, texture: defaultTexture, size: textureSize)

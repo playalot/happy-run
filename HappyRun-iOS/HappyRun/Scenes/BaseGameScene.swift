@@ -81,7 +81,7 @@ class BaseGameScene: SKScene {
     }
 
     
-    final func install(_ componentSystems: [GKComponentSystem<GKComponent>], gameStateMechine: GKStateMachine) {
+    final func install(componentSystems: [GKComponentSystem<GKComponent>], gameStateMechine: GKStateMachine) {
         self.componentSystems = componentSystems
         self.gameStateMechine = gameStateMechine
     }
