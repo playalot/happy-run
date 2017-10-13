@@ -9,5 +9,5 @@
 import UIKit
 
 class LayoutConst: NSObject {
-
+    let LaneBaseY = 500
 }
