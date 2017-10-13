@@ -18,10 +18,10 @@ class MainMenuScene: SKScene {
     }
     
     func sceneTapped() {
-//        let myScene = GameScene(size: size)
-//        myScene.scaleMode = scaleMode
-//        let reveal = SKTransition.doorway(withDuration: 1.5)
-//        view?.presentScene(myScene, transition: reveal)
+        let gameScene = BaseGameScene(size: size)
+        gameScene.scaleMode = scaleMode
+        let reveal = SKTransition.doorsOpenVertical(withDuration: 1.5)
+        view?.presentScene(gameScene, transition: reveal)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>,
