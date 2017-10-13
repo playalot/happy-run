@@ -10,6 +10,4 @@ import UIKit
 import SpriteKit
 import GameplayKit
 
-class BaseComponents: GKComponent {
-
-}
+typealias BaseComponent = GKComponent

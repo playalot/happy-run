@@ -10,6 +10,4 @@ import UIKit
 import SpriteKit
 import GameplayKit
 
-class BaseEntity: GKEntity {
-
-}
+typealias BaseEntity = GKEntity
