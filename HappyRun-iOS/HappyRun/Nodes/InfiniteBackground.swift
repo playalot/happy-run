@@ -56,7 +56,7 @@ class InfiniteBackground {
     
     func checkCameraOffset(offset: CGFloat) {
         if backgroundNodes.current.position.x + backgroundNodes.current.size.width < offset {
-            backgroundNodes.current.position.x = backgroundNodes.next.position.x + backgroundNodes.next.size.width * 2
+            backgroundNodes.current.position.x = backgroundNodes.next.position.x + backgroundNodes.next.size.width
             let temp = backgroundNodes.next
             backgroundNodes.next = backgroundNodes.current
             backgroundNodes.current = temp

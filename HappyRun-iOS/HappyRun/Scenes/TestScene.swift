@@ -33,7 +33,7 @@ class TestScene: BaseGameScene {
         
         addChild(cameraNode)
         camera = cameraNode
-        cameraNode.run(SKAction.repeatForever(SKAction.move(by: CGVector(dx: 200.0, dy: 0), duration: 1)))
+        cameraNode.run(SKAction.repeatForever(SKAction.move(by: CGVector(dx: 400.0, dy: 0), duration: 1)))
         cameraPosition = CGPoint.init(x: size.width/2, y: size.height/2)
 
          
@@ -65,7 +65,7 @@ class TestScene: BaseGameScene {
         entity.animationComponent.requestAnimationState = .run
         let node = entity.spriteComponent.node
         node.position =  atPoint ?? startPosition
-        node.run(SKAction.repeatForever(SKAction.moveBy(x: 200, y: 0, duration: 1)))
+        node.run(SKAction.repeatForever(SKAction.moveBy(x: 420, y: 0, duration: 1)))
         addEntity(entity: entity)
 
     }
