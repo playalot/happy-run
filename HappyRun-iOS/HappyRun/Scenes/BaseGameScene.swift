@@ -87,12 +87,12 @@ class BaseGameScene: SKScene {
     }
     
     
-    final func addEntity(entity: GKEntity) {
+    func addEntity(entity: GKEntity) {
         entities.insert(entity)
         for componentSystem in componentSystems {
             componentSystem.addComponent(foundIn: entity)
         }
-        if let node = entity.component(ofType: SpriteCompoment.self)?.node {
+        if let node = entity.component(ofType: SpriteComponent.self)?.node {
             addNode(node: node, toGameLayer: GameLayer.sprites)
             if let shadow = entity.component(ofType: ShadowComponent.self)?.node {
                 addNode(node: shadow, toGameLayer: GameLayer.shadows)
@@ -105,7 +105,7 @@ class BaseGameScene: SKScene {
         }
         
     }
-    final func addNode(node: SKNode, toGameLayer: GameLayer) {
+    func addNode(node: SKNode, toGameLayer: GameLayer) {
         gameLayerNodes[toGameLayer]!.addChild(node)
     }
 }

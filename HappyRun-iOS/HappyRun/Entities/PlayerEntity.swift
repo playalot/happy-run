@@ -17,7 +17,7 @@ enum PlayerType: String {
 
 class PlayerEntity: BaseEntity {
     let playerType: PlayerType!
-    private(set) var spriteComponent: SpriteCompoment!
+    private(set) var spriteComponent: SpriteComponent!
     private(set) var animationComponent: PlayerAnimationComponent!
     
     // 376 × 520
@@ -27,13 +27,13 @@ class PlayerEntity: BaseEntity {
         super.init()
         let textureAtlas = SKTextureAtlas(named: playerType.rawValue)
         let defaultTexture = textureAtlas.textureNamed("Idle__000.png")
-        let textureSize = CGSize(width: 376, height: 520)
+        let textureSize = CGSize(width: 376/2.0, height: 520/2.0)
         let animations = PlayerAnimationComponent.loadAnimation(textureAtlas: textureAtlas,
                                                           states: [PlayerAnimationState.dead : false,
                                                                    PlayerAnimationState.run : true,
                                                                    PlayerAnimationState.hit  : false])
         
-        spriteComponent = SpriteCompoment(entity: self, texture: defaultTexture, size: textureSize)
+        spriteComponent = SpriteComponent(entity: self, texture: defaultTexture, size: textureSize)
         animationComponent = PlayerAnimationComponent(node: spriteComponent.node, textureSize: textureSize, animations: animations)
         addComponent(spriteComponent)
         addComponent(animationComponent)

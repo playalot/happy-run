@@ -11,7 +11,7 @@ import SpriteKit
 import GameplayKit
 
 typealias EntityNode = SKSpriteNode
-class SpriteCompoment: BaseComponent {
+class SpriteComponent: BaseComponent {
 
     let node: EntityNode
     
